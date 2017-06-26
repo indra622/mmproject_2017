@@ -1,0 +1,17 @@
+net: "/data2/SPLAB/hosung/caffe/models/mmproject/train_val100_46_11.prototxt"
+test_iter: 16700
+test_interval: 50000
+base_lr: 0.0001 #0.01
+lr_policy: "inv"
+gamma: 0.0001
+#power: 0.5 #6000 #600#lr_policy: "step"
+power: 0.75
+#gamma: 0.96
+#stepsize: 400 #6000 #600
+display: 500
+max_iter: 100000 #8000 #24000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 50000
+snapshot_prefix: "/home/splab/hosung/data2/caffe/snapshot/" #1_1 test1-95
+solver_mode: GPU
